@@ -1,0 +1,47 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+    /* Modify the background color */
+     
+    .button-custom {
+        background-color: #8CC1B2;}
+    .button-custom1 {
+        background-color: #97D7C5;}
+    </style>
+<main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">
+                The Everything Calculator
+                <img src="{% static 'img/product_icon.png' %}" alt="icon" style="width:125px;height:125px;"/>
+            </h1>
+            <p>General use calculator to utilize for everyday activities.</p>
+            <p>
+                <a class="btn button-custom1 btn-lg" href="{% url 'about' %}" role="button">
+                Learn more &raquo;</a>
+            </p>
+            </div>
+    </div>
+
+    <div class="container">
+        <img src="{% static 'img/product_icon.png' %}" alt="icon" />
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="{% static 'img/product_icon.png' %}" alt="icon" />
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            On the subject of math, the Everything Calculator can assist you with calculus, geometry, algebra, trigonometry, and more. If interested in dieting or calorie consumption, this app can provide guidance on the amount of calories needed to lose, gain, or maintain weight. At a restaurant with friends and trying to figure out how much to leave as a tip or how to split the bill? Everything Calculator has functions for that, too. Trying to save money for something? Use the app to figure out how much money you should put away each week or month.
+            These, along with many more functions, make Everything Calculator an extremely handy tool for a variety of everyday activities.
+        </div>
+    </div>
+</main>
+{% endblock %}
